@@ -138,13 +138,22 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // emailjs.sendForm('service_tox7kqs', 'template_nv7k7mj', form.current, 'SybVGsYS52j2TfLbi')
-    //   .then((result) => {
-    //     setOpen(true);
-    //     form.current.reset();
-    //   }, (error) => {
-    //     console.log(error.text);
-    //   });
+    emailjs
+      .sendForm(
+        "service_v6vvejy",
+        "template_npfwfua",
+        form.current,
+        "EMjFw7tllFkrszeYw"
+      )
+      .then(
+        (result) => {
+          setOpen(true);
+          form.current.reset();
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
   };
 
   return (
@@ -163,6 +172,7 @@ const Contact = () => {
           <ContactButton type="submit" value="Send" />
         </ContactForm>
         <Snackbar
+          style={{ zIndex: 1500 }}
           open={open}
           autoHideDuration={6000}
           onClose={() => setOpen(false)}
