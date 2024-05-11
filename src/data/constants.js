@@ -65,7 +65,7 @@ export const skills = [
       },
       {
         name: "C++",
-        image: "../images/c++.png",
+        image: "..\images\c++.png",
       },
       {
         name: "VS Code",
