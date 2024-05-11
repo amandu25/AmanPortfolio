@@ -65,7 +65,7 @@ export const skills = [
       },
       {
         name: "C++",
-        image: "..\images\c++.png",
+        image: "https://raw.githubusercontent.com/isocpp/logos/master/cpp_logo.png",
       },
       {
         name: "VS Code",
